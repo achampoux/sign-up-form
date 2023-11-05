@@ -1,0 +1,87 @@
+#left-side {
+    position: relative;
+    background: url('clouds-by-tom-barrett.jpg');
+    width: 33.33%;
+    height: 100vh;
+    background-size:cover;
+}
+
+#right-side {
+    background-color: #f9fafb;
+    width: 66.66%;
+    height: 100vh;
+}
+
+section#intro {
+    box-sizing:border-box;
+    padding: 75px 75px 25px 75px;
+}
+
+ section#extra {
+     box-sizing: border-box;
+     padding: 25px 75px;
+ }
+
+main {
+    display: flex;
+}
+
+legends#photo-credit {
+    position: absolute;
+    bottom: 15px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    color: white;
+    background: rgba(100,100,100,0.4);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    box-shadow: 0 4px 6px -6px #222;
+    padding: 20px 75px;
+}
+
+h2 {
+    padding: 25px 75px; 0 75px;
+    margin-top: 10px;
+    background-color: white;
+    margin-bottom: 0;
+}
+
+fieldset {
+    border:none;
+}
+
+input {
+    display: block;
+    width: 100%;
+}
+
+label {
+    font-variant: small-caps;
+}
+
+@media (max-width: 700px) {
+    main {flex-direction:column;}
+    #left-side {width: 100%;}
+    #right-side {width: 100%;}
+}
+
+button {
+    background: forestgreen;
+    font-variant:small-caps;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+}
+
+p, span {
+    font-size: 24px;
+}
+
+a {
+    color: darkgreen;
+}
