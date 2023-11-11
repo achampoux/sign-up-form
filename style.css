@@ -1,9 +1,10 @@
 #left-side {
     position: relative;
-    background: url('clouds-by-tom-barrett.jpg');
+    background: url('minh-pham.jpg');
     width: 33.33%;
     height: 100vh;
     background-size:cover;
+    filter: grayscale(0.5);
 }
 
 #right-side {
@@ -20,6 +21,10 @@ section#intro {
  section#extra {
      box-sizing: border-box;
      padding: 25px 75px;
+ }
+
+ section#extra span {
+    font-size: 18px;
  }
 
 main {
@@ -41,41 +46,56 @@ form {
     grid-template-columns: 1fr 1fr;
     background-color: white;
     box-shadow: 0 4px 6px -6px #222;
+    box-shadow: ;
     padding: 20px 75px;
 }
 
 h2 {
-    padding: 25px 75px; 0 75px;
+    padding: 25px 75px;
     margin-top: 10px;
     background-color: white;
     margin-bottom: 0;
+    font-size: 32px;
 }
 
 fieldset {
     border:none;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 20px;
 }
 
 input {
     display: block;
     width: 100%;
+    border-radius: 20px;
+    line-height: 2;
+    margin-top: 5px;
+    padding: 0 10px;
 }
 
 label {
-    font-variant: small-caps;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     main {flex-direction:column;}
-    #left-side {width: 100%;}
+    #left-side {width: 100%;height:50vh;}
     #right-side {width: 100%;}
+    form {grid-template-columns: 1fr;}
 }
 
 button {
-    background: forestgreen;
-    font-variant:small-caps;
+    color: black;
+    font-variant: small-caps;
     border-radius: 20px;
-    color: white;
-    padding: 10px;
+    padding: 10px 70px;
+    margin: 10px 0;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.5;
 }
 
 p, span {
